@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3 class="text-center mt-4 fw-bold">Multiplication Factorial</h3>
+                </div>
+                <div class="card-back">
+                    <div class="col-10 mx-auto">
+                        <input type="number" id="numbe" placeholder="Enter Number of Factorial" class="form-control mt-4 rounded-0" style="border: 2px solid red;">
+                         <button class="col-12 btn btn-dark form-control my-2" onclick="calculateFactorial()">calculate</button>
+                         <div id="display" class="fw-bolder"></div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3 class="text-center mt-4 fw-bold">Additional Factorial</h3>
+                </div>
+                <div class="card-back">
+                    <div class="col-10 mx-auto">
+                        <input type="number" id="numb" placeholder="Enter Number of Factorial" class="form-control mt-4 rounded-0" style="border: 2px solid red;">
+                         <button class="col-10 btn btn-dark form-control my-2" onclick="calFactorial()">calculate</button>
+                         <div id="disp" class="fw-bolder"></div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+            <div class="col-12">
+                <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3 class="text-center mt-4 fw-bold">Multiplication Table</h3>
+                </div>
+                <div class="card-back">
+                    <div class="col-10 mx-auto mb-4">
+                        <div class="row">
+                        <input type="number" id="firstNum" placeholder="Enter Number Of Block" class="form-control me-2 col rounded-0" style="border: 2px solid red;">
+                        <input type="number" id="secondNum" placeholder="Enter Number Of Lines" class="form-control ms-2 col rounded-0" style="border: 2px solid red;">
+                        <select class="form-control ms-2 col rounded-0" id="operation" style="border: 2px solid red;">
+                            <option value="">Choose Operator</option>
+                            <option value="multi">Multiplication</option>
+                            <option value="add">Addition</option>
+                            <option value="sub">Subtraction</option>
+                            <option value="div">Division</option>
+                        </select>
+                        </div>
+                         <button class="col-6 btn btn-dark form-control my-2" onclick="multiTable()">calculate Table</button>
+                         
+                </div>
+
+            </div>
+        </div>
+    </div>
+        </div>
+        <div id="popOut" class="text-light"></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
