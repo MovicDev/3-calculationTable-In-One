@@ -10,34 +10,24 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-12">
                 <div class="card">
             <div class="card-inner">
                 <div class="card-front">
-                    <h3 class="text-center mt-4 fw-bold">Multiplication Factorial</h3>
+                    <h3 class="text-center mt-4 fw-bold">Math Factorial</h3>
                 </div>
                 <div class="card-back">
                     <div class="col-10 mx-auto">
-                        <input type="number" id="numbe" placeholder="Enter Number of Factorial" class="form-control mt-4 rounded-0" style="border: 2px solid red;">
+                        <div class="row">
+                        <input type="number" id="numbe" placeholder="Enter Number of Factorial" class="form-control col me-2 rounded-0" style="border: 2px solid red;">
+                        <select class="form-control col rounded-0" id="factorialOp" style="border: 2px solid red;">
+                            <option value="">Choose Operator</option>
+                            <option value="multiFac">Multiplication Factorial</option>
+                            <option value="addFac">Addition Factorial</option>
+                        </select>
+                    </div>
                          <button class="col-12 btn btn-dark form-control my-2" onclick="calculateFactorial()">calculate</button>
                          <div id="display" class="fw-bolder"></div>
-                        </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <h3 class="text-center mt-4 fw-bold">Additional Factorial</h3>
-                </div>
-                <div class="card-back">
-                    <div class="col-10 mx-auto">
-                        <input type="number" id="numb" placeholder="Enter Number of Factorial" class="form-control mt-4 rounded-0" style="border: 2px solid red;">
-                         <button class="col-10 btn btn-dark form-control my-2" onclick="calFactorial()">calculate</button>
-                         <div id="disp" class="fw-bolder"></div>
                         </div>
                 </div>
 
